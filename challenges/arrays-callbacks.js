@@ -51,11 +51,13 @@ The zoos need to know their total animal population across the United States. Fi
 
 */
 let populationTotal = 0;
+let popIntel = [];
+zooAnimals.forEach(e => {popIntel.push(e.population);})
 
-populationTotal = zooAnimals.population.reduce((sum, cur,) => {
-  return sum+cur; 
+populationTotal = popIntel.reduce((sum, cur) => {
+  populationTotal = sum+cur; 
+  return populationTotal;
   })
-
 console.log(populationTotal);
 
 
@@ -67,6 +69,10 @@ console.log(populationTotal);
   * The last parameter accepts a callback
   * The consume function should return the invocation of cb, passing a and b into cb as arguments
 */
+consume = (a,b,cb) => {
+  return cb(a,b);
+}
+
 
 
 /* Step 2: Create several functions to callback with consume();
@@ -74,12 +80,20 @@ console.log(populationTotal);
   * Create a function named multiply that returns the product of two numbers 
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
+add = (a,b) => {
+  return a+b};
+multiply = (a,b) => {
+  return a*b};
+greeting =( firstName , lastName ) => {
+  return `Hello ${firstName} ${lastName}, nice to meet you!`
+}
+
 
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
-// console.log(consume(2, 2, add)); // 4
-// console.log(consume(10, 16, multiply)); // 160
-// console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
+console.log(consume(2, 2, add)); // 4
+console.log(consume(10, 16, multiply)); // 160
+console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
 
 
 
