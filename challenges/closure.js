@@ -25,16 +25,17 @@ myFunction();
 
 summation = (startNum) => {
   let count = 1;
-  if(startNum > count ){
-    count = count + count;
-    console.log(count);
+  let total = 0;
+  for (let i = 0 ; i < startNum; i++){
+    total = total + count;
+    count++;
+    // console.log(count);
+    // console.log(total);
     }
-  else{
-    return count
-    }  
+  return total;
 
 }
-summation(6);
+console.log(summation(5)); //15
 
 
 
@@ -43,17 +44,17 @@ summation(6);
 
 
 // //wrong
-summation = (startNum) => {
-  let count = [];
-  let endPoint = startNum;
-  for (let i = endPoint; startNum === 0 ; i--){
-    count.push(startNum)
-    startNum--;
-  }
-  let total = count.reduce((acc, cur) => {return acc + cur});
-  return total;
-}
-summation(4);
+// summation = (startNum) => {
+//   let count = [];
+//   let endPoint = startNum;
+//   for (let i = endPoint; startNum === 0 ; i--){
+//     count.push(startNum)
+//     startNum--;
+//   }
+//   let total = count.reduce((acc, cur) => {return acc + cur});
+//   return total;
+// }
+// summation(4);
 // //wrong
 // summation = (startNumber) => {
 //   let count = [];
