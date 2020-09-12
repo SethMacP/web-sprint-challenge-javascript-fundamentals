@@ -17,8 +17,31 @@ function myFunction() {
 myFunction();
 
 // Explanation: 
-
+`The nested function is within the function [myFunction]. Due to const haveing a block scope it means anything within its 'block' can read it. Since [nestedFunction] falls within the {} of [myFunction] it is within it's scope.`
 
 /* Task 2: Counter */
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+summation = (startNumber) => {
+  let count = 1;
+  for (let i = 0 ; i < startNumber ; i++)
+  return counter = () => {
+    return count++;
+  }
+}
+
+
+
+// //wrong
+// summation = (para) => {
+//   let total = [];
+//   for (let i = para ; i <= para; i--){
+//     total.push(i++)
+    
+//     return total;}
+    
+//   let sum = total.reduce((acc,cur)=>{return acc+cur});
+//   return sum;
+// }
+ 
+//  console.log(summation(10));
