@@ -24,9 +24,17 @@ myFunction();
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
 
 summation = (startNum) => {
-  
+  let count = 1;
+  if(startNum > count ){
+    count = count + count;
+    console.log(count);
+    }
+  else{
+    return count
+    }  
 
 }
+summation(6);
 
 
 
@@ -35,17 +43,17 @@ summation = (startNum) => {
 
 
 // //wrong
-// summation = (startNum) => {
-//   let count = [];
-//   let endPoint = startNum;
-//   for (let i = endPoint; startNum === 0 ; i--){
-//     count.push(startNum)
-//     startNum--;
-//   }
-//   let total = count.reduce((acc, cur) => {return acc + cur});
-//   return total;
-// }
-// summation(4);
+summation = (startNum) => {
+  let count = [];
+  let endPoint = startNum;
+  for (let i = endPoint; startNum === 0 ; i--){
+    count.push(startNum)
+    startNum--;
+  }
+  let total = count.reduce((acc, cur) => {return acc + cur});
+  return total;
+}
+summation(4);
 // //wrong
 // summation = (startNumber) => {
 //   let count = [];
