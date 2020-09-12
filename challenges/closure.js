@@ -23,38 +23,47 @@ myFunction();
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
 
-
-
-//wrong
 summation = (startNum) => {
-  let count = [];
-  let endPoint = startNum;
-  for (let i = endPoint; startNum = 0 ; i--){
-    count.push(startNum)
-    startNum--;
-  }
-  let total = count.reduce((acc, cur) => {return acc + cur});
-  return total;
+  
+
 }
-summation(4);
-//wrong
-summation = (startNumber) => {
-  let count = [];
-  for (let i = 0 ; i < startNumber ; i++){
-    count.push(startnumber--)
-    console.log(count);
-  }
-    return count;
-  }
-//wrong
-summation = (para) => {
-  let total = [];
-  for (let i = para ; i <= para; i--){
-    total.push(i++)
+
+
+
+
+
+
+
+// //wrong
+// summation = (startNum) => {
+//   let count = [];
+//   let endPoint = startNum;
+//   for (let i = endPoint; startNum === 0 ; i--){
+//     count.push(startNum)
+//     startNum--;
+//   }
+//   let total = count.reduce((acc, cur) => {return acc + cur});
+//   return total;
+// }
+// summation(4);
+// //wrong
+// summation = (startNumber) => {
+//   let count = [];
+//   for (let i = 0 ; i < startNumber ; i++){
+//     count.push(startnumber--)
+//     console.log(count);
+//   }
+//     return count;
+//   }
+// //wrong
+// summation = (para) => {
+//   let total = [];
+//   for (let i = para ; i <= para; i--){
+//     total.push(i++)
     
-    return total;}
+//     return total;}
     
-  let sum = total.reduce((acc,cur)=>{return acc+cur});
-  return sum;
-}
+//   let sum = total.reduce((acc,cur)=>{return acc+cur});
+//   return sum;
+// }
  
