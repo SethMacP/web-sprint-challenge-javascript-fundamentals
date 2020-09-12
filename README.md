@@ -26,14 +26,30 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+    `.forEach` Does not create a new array, but runs a callback on each item in an array.
+    `.map` Does create an array, changes elements based on whats in the return line.
+
 
 2. Explain the difference between a callback and a higher order function.
+    A higher-order function accepts and/or returns a function.
+    A callback function is passed into a function with the expectation it will be called.
+
 
 3. What is closure?
+    Reaching out of your scope to grab a variable.
 
 4. Describe the four rules of the 'this' keyword.
+    1. Is the function called by new?
+        1. You must specify you are creating a new object, otherwise you would be calling on the class when you used '.this' instead of the object.
+    2. Is the function called by call(), apply(), or bind()?
+        2. These associate the function with the object.
+    3. Is the function called as a method, ie: obj.func()?
+        3. This allows your function methods to be called on `this` as they always point to the left. `${this.method()}`
+    4. Is the function called in the global scope?
+        4. It needs to be accessible to the whole program.
 
 5. Why do we need super() in an extended class?
+    It passes the parameters to the parent class.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -41,12 +57,12 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 ### Task 1: Project Set Up
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
-- [ ] Push commits: git push origin `<firstName-lastName>`
+- [x] Create a forked copy of this project
+- [x] Add your team lead as collaborator on Github
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
+- [x] Push commits: git push origin `<firstName-lastName>`
 
 ### Task 2: Project Requirements
 
